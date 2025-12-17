@@ -159,26 +159,26 @@
 
 
 <footer>
-<p>© 2025 Daniel’s Pizza Galați <br> <a style="color:green" href="https://www.scalamafaceri.ro/">scalamafaceri.ro</a></p>
+<p>© 2025 Daniel’s Pizza Galați <br> <a style="color:#2afeb7" target="_blank" href="https://www.scalamafaceri.ro/">scalamafaceri.ro</a></p>
 </footer>
 
     <script>
-        const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
-const navLinks = document.querySelectorAll('.nav-link');
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+const navLinks = document.querySelectorAll('nav .nav-links li a');
 
-// deschide / inchide hamburger
 hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
+  hamburger.classList.toggle('active'); 
+  nav.classList.toggle('active');       
 });
 
-// INCHIDE automat la click pe orice link
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    navMenu.classList.remove('show');
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
   });
 });
-    </script>
+</script>
 
     
     <script>
@@ -261,5 +261,6 @@ lightbox.addEventListener('click', e => {
 </body>
 
 </html>
+
 
 
