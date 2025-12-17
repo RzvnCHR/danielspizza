@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <title>Daniel's Pizza Galați</title>
+  <meta name="description" content="Descoperă Daniel's Pizza în Galați! Pizza făcută în cuptor pe lemne, ingrediente 100% italienești, gust autentic și livrare rapidă.">
+  <meta name="keywords" content="pizza Galați, pizza autentică, ingrediente italienești, livrare pizza, cuptor pe lemne, meniul pizzeriei">
+  <meta name="author" content="Daniel's Pizza Galați">
+  
+  <!-- Social Media / Open Graph -->
+  <meta property="og:title" content="Daniel's Pizza Galați – Pizza autentică">
+  <meta property="og:description" content="Pizza făcută în cuptor pe lemne, ingrediente 100% italienești și livrare rapidă în Galați.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.danielspizza.ro">
+  <meta property="og:image" content="https://www.danielspizza.ro/imagini/coperta.jpg">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="robots" content="index, follow">
+
+</head>
+<body>
+
+
+    <header>
+<nav>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<ul id="menu">
+<li><a href="#hero">Acasă</a></li>
+<li><a href="#despre">De ce noi</a></li>
+<li><a href="#meniu">Meniu</a></li>
+<li><a href="#locatie">Locație</a></li>
+<li><a href="#contact">Reviews</a></li>
+</ul>
+</nav>
+    </header>
+
+<button id="scrollTopBtn" title="Înapoi sus"><i class="fa-solid fa-angle-up"></i></button>
+
+
+<section id="hero" class="hero">
+    <h1 class="wow t1">Bucură-te de gustul italian autentic!</h1>
+
+  <img src="logo.png" alt="Daniel's Pizza" class="wow hero-logo">
+
+<p class="wow p1">Cuptor pe lemne, toppinguri care fac diferența și pizza servită rapid, proaspătă și plină de aromă, nu doar caldă.</p>
+
+<a class="wow btn btn-comanda" href="tel:+40723107207">Comandă acum</a>
+</section>
+
+
+<section id="despre">
+<h2 class="wow">De ce Daniel’s Pizza?</h2>
+<div class="grid">
+<div class="wow card"><h3>Cuptor pe Lemne</h3>
+    <p>Pizza noastră se coace în cuptor pe lemne, exact ca în tradiția italiană. Gustul este unic, crusta crocantă la exterior și moale în interior.</p>
+</div>
+<div class="wow card"><h3>Ingrediente italienești</h3>
+    <p>Folosim doar ingrediente autentice din Italia: mozzarella, roșii San Marzano, ulei extra virgin. Fiecare felie păstrează gustul adevărat al pizzei italiene, fără compromisuri.</p>
+</div>
+<div class="wow card"><h3>Aroma</h3>
+    <p>Fiecare pizza te întâmpină cu arome intense și echilibrate. Combinăm condimentele și brânza atent pentru ca fiecare mușcătură să fie o experiență memorabilă.
+    </p>
+</div>
+<div class="wow card"><h3>Viteza</h3>
+    <p>Știm că timpul contează: livrăm rapid, fără să neglijăm calitatea. Pizza ajunge caldă și proaspătă, gata să te bucure imediat.
+    </p>
+</div>
+<div class="wow card"><h3>Experiența</h3>
+    <p>
+<strong>Daniel’s Pizza</strong> a cucerit Danemarca cu gustul autentic și serviciul de top. Această experiență ne ajută să oferim aceeași calitate și la Galați, cu rețete testate și feedback-ul clienților mulțumiți!
+    </p>
+</div>
+</div>
+</section>
+
+
+<section id="meniu">
+<h2 class="wow">Meniul nostru</h2>
+<p class="wow p1">Peste 20 de sortimente de pizza – clasice și speciale.</p>
+<div class="menu-gallery meniu1">
+  <img src="meniu1.jpeg" alt="Meniul Pizzeriei 1" class="wow menu-thumb">
+  <img src="meniu2.jpeg" alt="Meniul Pizzeriei 2" class="wow menu-thumb">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+</section>
+
+<section>
+<h2 class="wow bestseller">Best Sellers</h2>
+<div class="menu-gallery meniu2">
+    <div class="menu-item">
+      <h2>Pollo Rosso</h2>
+      <img src="4.jpeg" alt="4. Pollo Rosso" class="wow menu-thumb">
+    </div>
+  <div class="menu-item">
+    <h2>Pumpkin</h2>
+    <img src="13.jpeg" alt="13. Pumpkin" class="wow menu-thumb">
+  </div>
+  <div class="menu-item">
+    <h2>Pollo Bianco</h2>
+    <img src="5.jpeg" alt="5. Pollo Bianco" class="wow menu-thumb">
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+
+</section>
+
+
+<section id="locatie">
+<h2 class="wow">Unde ne găsești?</h2>
+<p class="wow p1">Str. Brăilei 175D lângă<br>Patinoar/McDonald's M19 <br> Galați</p>
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4223351167216!2d28.01855357692915!3d45.42098717107342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dfcbe4878447%3A0x77f00bdbadf23e34!2sDaniel&#39;s%20Pizza%20Galati!5e0!3m2!1sro!2sro!4v1765967617610!5m2!1sro!2sro" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
+
+
+<section id="reviewsclienti">
+<h2 class="wow">Ce spun clienții?</h2>
+<div class="reviews">
+
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-e9bf32b6-0f9e-490f-b28f-10232069d062" data-elfsight-app-lazy></div>
+</div>
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+</section>
+
+
+<section id="contact">
+<a class="wow btn btn-comanda" href="tel:+40723107207">Comandă acum</a>
+<div class="social-media">
+  <a href="https://www.facebook.com/profile.php?id=61584517783517" target="_blank" class="wow social-icon facebook" aria-label="Facebook">
+<i class="fa-brands fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/danielspizza.galati/" target="_blank" class="wow social-icon instagram" aria-label="Instagram">
+ <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@danielspizza.galati" target="_blank" class="wow social-icon tiktok" aria-label="TikTok">
+<i class="fa-brands fa-tiktok"></i>
+  </a>
+</div>
+</section>
+
+
+<footer>
+<p>© 2025 Daniel’s Pizza Galați <br> <a style="color:green" href="https://www.scalamafaceri.ro/">scalamafaceri.ro</a></p>
+</footer>
+
+
+<script>
+function toggleMenu(){
+document.getElementById('menu').classList.toggle('show');
+}
+</script>
+
+<script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+// Arată butonul după ce dai scroll 200px
+window.onscroll = function() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+};
+
+// Scroll către top cu efect smooth la click
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+</script>
+
+<script>
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const thumbs = document.querySelectorAll('.menu-thumb');
+const closeBtn = document.querySelector('.close');
+
+thumbs.forEach(thumb => {
+  thumb.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = thumb.src;
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+// Închide lightbox la click în afara imaginii
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});
+
+</script>
+
+<script src="https://kit.fontawesome.com/e9bbccc558.js" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW({
+    boxClass:     'wow',      // clasele care vor fi animate
+    animateClass: 'animate__animated', // clasa Animate.css
+    offset:       100,        // declanșare cu 100px înainte de a intra în viewport
+    mobile:       true,       // permite animatii pe mobil
+    live:         true        // monitorizează DOM-ul dinamic
+  }).init();
+</script>
+</body>
+</html>
