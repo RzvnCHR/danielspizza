@@ -77,13 +77,13 @@ nav ul li a {
 
 #scrollTopBtn {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   z-index: 100;
   background-color: #f38b31;
   color: white;
   border: none;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
   font-size: 24px;
   cursor: pointer;
@@ -104,7 +104,7 @@ nav ul li a {
 
 /* SECTIONS */
 section {
-    padding: 80px 20px;
+    padding: 40px 20px;
     
 }
 section h2 {
@@ -462,5 +462,6 @@ nav ul.show {
     }
 
 }
+
 
 
