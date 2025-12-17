@@ -163,6 +163,25 @@
 </footer>
 
     <script>
+        const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// deschide / inchide hamburger
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+
+// INCHIDE automat la click pe orice link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('show');
+  });
+});
+    </script>
+
+    
+    <script>
         const links = document.querySelectorAll('.scroll-link');
 
 links.forEach(link => {
@@ -246,3 +265,4 @@ lightbox.addEventListener('click', e => {
 </body>
 
 </html>
+
