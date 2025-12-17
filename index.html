@@ -162,6 +162,20 @@
 <p>© 2025 Daniel’s Pizza Galați <br> <a style="color:green" href="https://www.scalamafaceri.ro/">scalamafaceri.ro</a></p>
 </footer>
 
+    <script>
+        const links = document.querySelectorAll('.scroll-link');
+
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+    </script>
 
 <script>
 function toggleMenu(){
@@ -230,4 +244,5 @@ lightbox.addEventListener('click', e => {
   }).init();
 </script>
 </body>
+
 </html>
