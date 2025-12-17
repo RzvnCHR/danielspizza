@@ -163,31 +163,27 @@
 </footer>
     
 <script>
-function toggleMenu(){
-document.getElementById('menu').classList.toggle('show');
-}
-</script>
-    
-    <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ===== HAMBURGER MENU ===== */
   const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.getElementById('menu'); // UL-ul din nav
-  const navLinks = navMenu.querySelectorAll('a');
+  const menu = document.getElementById('menu');
+  const links = menu.querySelectorAll('a');
 
-  hamburger.addEventListener('click', () => {
+  // deschide / închide hamburger
+  window.toggleMenu = function () {
+    menu.classList.toggle('show');
     hamburger.classList.toggle('active');
-    navMenu.classList.toggle('show');
-  });
+  };
 
-  // închide meniul când se apasă pe o secțiune
-  navLinks.forEach(link => {
+  // închide automat meniul la click pe orice link
+  links.forEach(link => {
     link.addEventListener('click', () => {
+      menu.classList.remove('show');
       hamburger.classList.remove('active');
-      navMenu.classList.remove('show');
     });
   });
+
+});
 </script>
     
     <script>
@@ -265,6 +261,7 @@ lightbox.addEventListener('click', e => {
 </body>
 
 </html>
+
 
 
 
